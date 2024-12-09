@@ -1,21 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Zool - Ninja of the 'Nth' Dimension</title>
-    <!-- Include EmulatorJS -->
-    <script src="https://cdn.emulatorjs.org/latest/emulator.js"></script>
-</head>
-<body>
-    <h1>Zool - Ninja of the 'Nth' Dimension</h1>
-    <!-- Emulator Container -->
-    <div id="emulator"></div>
-    <script>
-        // Configure EmulatorJS
-        EJS_player = '#emulator';
-        EJS_gameUrl = './zool.smc'; // Update with your ROM file name and path
-        EJS_core = 'snes';
-        EJS_start();
-    </script>
-</body>
-</html>
+<div style='width:640px;height:480px;max-width:100%'>
+    <div id='game'></div>
+</div>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    
+    // Can also be snes9x
+    EJS_core = 'snes';
+    
+    //SNES mouse
+    EJS_mouse = false; 
+    
+    // SNES Multitap
+    EJS_multitap = false; 
+    
+    // URL to BIOS file
+    EJS_biosUrl = '';
+    
+    // URL to Game rom
+    EJS_gameUrl = '';
+    
+    // Path to the data directory
+    EJS_pathtodata = 'data/';
+</script>
+<script src='data/loader.js'></script>
