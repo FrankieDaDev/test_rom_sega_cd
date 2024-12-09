@@ -1,0 +1,8 @@
+title: Your Site Title
+description: A description for your site
+baseurl: ""
+url: "http://yourdomain.com"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
