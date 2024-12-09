@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sega CD Game</title>
+    <title>Zool - Ninja of the 'Nth' Dimension</title>
+    <!-- Include EmulatorJS -->
+    <script src="https://cdn.emulatorjs.org/latest/emulator.js"></script>
 </head>
 <body>
-    <h1>Welcome to Sega CD Game</h1>
-    <script src="https://cdn.jsdelivr.net/npm/emulatorjs@latest/dist/emulator.js"></script>
+    <h1>Zool - Ninja of the 'Nth' Dimension</h1>
+    <!-- Emulator Container -->
+    <div id="emulator"></div>
     <script>
-        const emulator = new EmulatorJS({
-            // Configuration for the emulator
-        });
-
-        emulator.loadRom('path/to/your/game.iso');
+        // Configure EmulatorJS
+        EJS_player = '#emulator';
+        EJS_gameUrl = './zool.smc'; // Update with your ROM file name and path
+        EJS_core = 'snes';
+        EJS_start();
     </script>
 </body>
 </html>
